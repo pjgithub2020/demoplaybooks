@@ -7,3 +7,6 @@
     - name: print a sample message
       debug:
         msg: "Hello punit is being printed"
+
+    - name: ask for message
+      printing name "{{name}}"
