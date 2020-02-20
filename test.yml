@@ -2,7 +2,7 @@
 - name: print message
   connection: local
   gather_facts: false
-  hosts: localhostt
+  hosts: localhost
   tasks:
     - name: print a sample message
       debug:
