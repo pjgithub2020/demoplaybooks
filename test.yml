@@ -9,4 +9,5 @@
         msg: "Hello punit is being printed"
 
     - name: ask for message
-      printing name "{{name}}"
+      debug:
+        msg: "printing my name {{name}}"
