@@ -1,0 +1,9 @@
+---
+- name: print message
+  connection: local
+  gather_facts: false
+  hosts: localhostt
+  tasks:
+    - name: print a sample message
+      debug:
+        msg: "Hello punit is being printed"
