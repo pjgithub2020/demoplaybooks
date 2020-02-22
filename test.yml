@@ -8,8 +8,6 @@
       debug:
         msg: "Test playbook"
 
-    - name: ask for message
-      uri:
-        url: http://someurl
-        return_content: yes
-      register: restoutput
+    - name: get value and print
+      debug:
+        var=name
