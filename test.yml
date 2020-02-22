@@ -1,13 +1,15 @@
 ---
-- name: print message
+- name: Get REST o/p
   connection: local
   gather_facts: false
   hosts: localhost
   tasks:
     - name: print a sample message
       debug:
-        msg: "Hello punit is being printed"
+        msg: "Test playbook"
 
     - name: ask for message
-      debug:
-        msg: "printing my name {{name}}"
+      uri:
+        url: http://someurl
+        return_content: yes
+      register: restoutput
