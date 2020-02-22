@@ -10,4 +10,4 @@
 
     - name: get value and print
       debug:
-        var=name
+        var=finalname
