@@ -12,3 +12,7 @@
       debug:
         var=finalname
       register: outputvalue
+
+    - name: outputvalue
+      debug:
+        msg: "{{outputvalue}}" 
